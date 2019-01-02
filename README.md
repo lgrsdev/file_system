@@ -37,13 +37,13 @@ The file system contains the following entities and operations:
 ### Solution:
 
 
-* Classes involved in the program and the relationships between them are depicted in model.png file (a class diagram).
+* The classes involved and the relationships between them depicted in model.png file (a class diagram).
 * Directory class acts as composite pattern actor class.
 * Directory's children are held in a HashSet to keep Directory operations in o(1).
-* Searches time in FileSystemImpl is o(1) due to its Cache which implemented as a HashMap. 
+* Searches time in FileSystemImpl class is o(1) due to its Cache which implemented as a HashMap. 
 * By default, the Cache holds a root Directory which in turn points to the rest of the File System.
 * Root directory represented by a "/" sign and cannot be deleted under any circumstances. 
-* The cache saves to the File System all the created FS entities (files or directories) on their insertion. 
+* The cache saves to the "File System" all the created FS entities (files or directories) on their insertion. 
 * In order to prevent a memory leak, the cache gets rid of an FS entity on its removal from the File System.
 * Tests can be found under src/test/java Source folder.
 * Implementation is not thread-safe.
