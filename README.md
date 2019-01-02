@@ -1,4 +1,4 @@
-<title>Target: Design and implement a program which will handle and manage a "File System" structure</title>
+## Target: Design and implement a program which will handle and manage a "File System" structure
 
 The file system contains the following entities and operations:
 
@@ -30,7 +30,8 @@ The design should include:
 The classes that will be involved in the program and the relationship between them
 The major methods and members of each class
 The answer should be sent in a zip file.
-//////////////////////// // Solution // ///////////////////////
+
+## Solution
 
 Classes involved in the program and the relationships between them are depicted in model.png file (a class diagram).
 Directory class acts as composite pattern actor class.
