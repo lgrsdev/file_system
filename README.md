@@ -43,7 +43,7 @@ The file system contains the following entities and operations:
 * Searches time in FileSystemImpl class is o(1) due to its Cache which implemented as a HashMap. 
 * By default, the Cache holds a root Directory which in turn points to the rest of the File System.
 * Root directory represented by a "/" sign and cannot be deleted under any circumstances. 
-* The cache saves to the "File System" all the created FS entities (files or directories) on their insertion. 
+* All created FS entities (files or directories) in File System saved to cache on their insertion. 
 * In order to prevent a memory leak, the cache gets rid of an FS entity on its removal from the File System.
 * Tests can be found under src/test/java Source folder.
 * Implementation is not thread-safe.
