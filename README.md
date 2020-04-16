@@ -39,8 +39,8 @@ The file system contains the following entities and operations:
 
 * The classes involved and the relationships between them depicted in model.png file (a class diagram).
 * Directory class acts as composite pattern actor class.
-* Directory's children are held in a HashSet to keep Directory operations in o(1).
-* Searches time in FileSystemImpl class is o(1) due to its Cache which implemented as a HashMap. 
+* Directory's children are held in a HashSet to keep Directory operations in O(1).
+* Searches time in FileSystemImpl class is O(1) due to its Cache which implemented as a HashMap. 
 * By default, the Cache holds a root Directory which in turn points to the rest of the File System.
 * Root directory represented by a "/" sign and cannot be deleted under any circumstances. 
 * All created FS entities (files or directories) in File System saved to cache on their insertion. 
